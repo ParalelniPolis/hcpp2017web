@@ -27,8 +27,8 @@ var app = express();
 // set enviroment variable
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
-app.locals.ENV_DEVELOPMENT = env == 'development';
-app.locals.APP_NAME = 'Hackers Congress Paralelní Polis 2016';
+app.locals.ENV_DEVELOPMENT = env === 'development';
+app.locals.APP_NAME = 'Hackers Congress Paralelní Polis 2017';
 
 var sessionSecret = process.env.SESSION_SECRET;
 
@@ -81,6 +81,11 @@ app.use('/ross', rossRoute);
 
 // redirect old address
 app.get('/eng', function(req, res) {
+  res.redirect('/');
+});
+
+// redirect /en addres
+app.get('/en', function(req, res) {
   res.redirect('/');
 });
 

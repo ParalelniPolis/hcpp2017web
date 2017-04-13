@@ -36,7 +36,7 @@ Contents
 *********/
 
 :root {
-    --mainColor: #c8a700;
+    --mainColor: #a0b2b8;
 }
 header#fullwidth .decentralization {
     display: inline-block;
@@ -703,7 +703,7 @@ section .subtitle {
 5.Section Event Features
 *********/
 
-section#about-hcpp16 h3 {
+section#about-hcpp17 h3 {
     font-size: 21px;
     margin: 25px 0 10px
 }
@@ -718,10 +718,6 @@ section#speakers .speaker-item figure {
     margin: 0 0 15px;
 }
 section#speakers .speaker-item img {
-    -webkit-filter: opacity(0.95);
-    -moz-filter: opacity(0.95);
-    -o-filter: opacity(0.95);
-    -ms-filter: opacity(0.95);
     filter: opacity(0.95)
 }
 h3.talktitle {
@@ -749,9 +745,7 @@ figure.speaker {
     margin-bottom: 20px
 }
 figure.speaker * {
-    -webkit-box-sizing: padding-box;
     box-sizing: padding-box;
-    -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out
 }
 figure.speaker img {
@@ -763,7 +757,6 @@ figure.speaker figcaption {
     left: 40px;
     right: 40px;
     position: absolute;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 figure.speaker figcaption p.accent {
@@ -771,7 +764,6 @@ figure.speaker figcaption p.accent {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
-    -webkit-transform: translateY(75%);
     transform: translateY(75%)
 }
 figure.speaker figcaption h2 span {
@@ -792,19 +784,16 @@ figure.speaker:after {
     left: 20px;
     content: '';
     opacity: 0;
-    -webkit-transition: opacity 0.6s, -webkit-transform .6s;
-    transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform .6s
+    transition: opacity 0.6s, transform .6s
 }
 figure.speaker:before {
     border-top: 1px double #fff;
     border-bottom: 1px double #fff;
-    -webkit-transform: scale(0, 1);
     transform: scale(0, 1)
 }
 figure.speaker:after {
     border-right: 1px double #fff;
     border-left: 1px double #fff;
-    -webkit-transform: scale(1, 0);
     transform: scale(1, 0)
 }
 figure.speaker a {
@@ -827,9 +816,7 @@ figure.speaker.yellow {
 figure.speaker:hover img,
 figure.speaker.hover img {
     opacity: .2;
-    -webkit-filter: blur(5px);
     filter: blur(5px);
-    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 figure.speaker:hover figcaption h2,
@@ -838,14 +825,11 @@ figure.speaker:hover figcaption p,
 figure.speaker.hover figcaption p {
     opacity: 1;
     border-color: rgba(255, 255, 255, 0.5);
-    -webkit-transition-delay: .2s;
     transition-delay: .2s;
-    -webkit-transform: translateY(0);
     transform: translateY(0)
 }
 figure.speaker:hover figcaption p,
 figure.speaker.hover figcaption p {
-    -webkit-transition-delay: .3s;
     transition-delay: .3s
 }
 figure.speaker:hover:before,
@@ -853,7 +837,6 @@ figure.speaker.hover:before,
 figure.speaker:hover:after,
 figure.speaker.hover:after {
     opacity: .8;
-    -webkit-transform: scale(1);
     transform: scale(1)
 }
 /* ========== Speaker Styles for the filter & items  ========== */
@@ -904,9 +887,7 @@ figure.speaker.hover:after {
 }
 .speaker-items {
     margin: -8px;
-    -webkit-transition: all .6s ease;
     transition: all .6s ease;
-    -webkit-transition-delay: .6s;
     transition-delay: .6s
 }
 .single-item {
@@ -918,7 +899,6 @@ figure.speaker.hover:after {
 }
 .single-item a {
     display: block;
-    -webkit-transition: none!important;
     transition: none!important
 }
 . .speaker-image {
@@ -930,10 +910,7 @@ figure.speaker.hover:after {
 .speaker-image img {
     max-width: inherit;
     width: 100%;
-    -webkit-transition: all .45s ease-out;
     transition: all .45s ease-out;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1)
 }
 .speaker-content {
@@ -955,8 +932,6 @@ figure.speaker.hover:after {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 .p-title {
@@ -976,8 +951,6 @@ figure.speaker.hover:after {
     line-height: 16px;
 }
 .single-item:hover img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
     transform: scale(1.1)
 }
 .single-item:hover .speaker-content {
@@ -1088,10 +1061,7 @@ section#highlight {
     background: url(/media/image-backgrounds/contentbg.jpg) no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 		@media(min-width: 1280px) {
 			& {
 				background-attachment: fixed
@@ -1121,9 +1091,6 @@ section#highlight {
     margin: 30px auto;
     position: relative;
     padding: 0 10px;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 #timeline:before {
@@ -1256,10 +1223,7 @@ section#tickets .price {background: rgba(20,20,20, 1);display: block;width: 120p
 .ribbon-light {
     color: #333;
     text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     position: relative;
     padding: 4px 0;
     right: 26px;
@@ -1268,8 +1232,6 @@ section#tickets .price {background: rgba(20,20,20, 1);display: block;width: 120p
     width: 120px;
     background-color: var(--mainColor);
     color: #fff;
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     text-transform: uppercase
 }
@@ -1313,10 +1275,7 @@ section#tickets .price {background: rgba(20,20,20, 1);display: block;width: 120p
 .ribbon-dark {
     color: #333;
     text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     position: relative;
     padding: 4px 0;
     right: 26px;
@@ -1325,8 +1284,6 @@ section#tickets .price {background: rgba(20,20,20, 1);display: block;width: 120p
     width: 120px;
     background-color: #141414;
     color: var(--mainColor);
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     text-transform: uppercase
 }
@@ -1371,13 +1328,10 @@ section#partners {}
 *********/
 
 section#newsletter {
-    background: #141414 url(/media/image-backgrounds/newsletterbg.jpg) no-repeat;
+    background: #141414 url(/media/image-backgrounds/contentbg.jpg) no-repeat;
     background-position: top center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 		@media(min-width: 1280px) {
 			& {
 				background-attachment: fixed
@@ -1498,8 +1452,6 @@ ul.social-buttons li a {
     outline: 0px none;
     color: #FFF;
     background-color: #141414;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
     transition: all .3s;
 }
 ul.social-buttons li a:hover,
@@ -1581,10 +1533,7 @@ ul.social-buttons li a:active {
 header {
     background-position: top center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 		@media(min-width: 1280px) {
 			& {
 				background-attachment: fixed
@@ -1620,10 +1569,7 @@ header h3 span.date {
 header#hero {
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover
 }
 header#hero .header-text {
     padding-top: 100px;
@@ -1640,10 +1586,7 @@ header#hero .header-text {
 header#fullwidth {
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-size: contain;
 }
 header#fullwidth {
     min-height: 100%;
@@ -1798,10 +1741,7 @@ header#fullwidth .header-text {
 header#hero-sm {
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover
 }
 header#hero-sm .header-text {
     padding-top: 100px;
@@ -1816,6 +1756,7 @@ header#hero-sm .header-text {
 /* ========== Hero Backgrounds ========== */
 
 .homepage {
+    background-color: #bcd0d6;
     background-image: url(/media/image-backgrounds/fullwidth-header-small.png);
 
 		@media(min-width: 768px) {
@@ -1871,8 +1812,6 @@ section#full-schedule .nav-tabs > li.active > a:focus {
     cursor: default;
     border: 0px solid var(--mainColor);
     border-bottom: 0;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
     transition: all .6s;
     background: #efefef;
 }
@@ -1923,7 +1862,6 @@ section#full-schedule .tab-pane p.lead {
 section#full-schedule .panel {
     border: 0px solid transparent;
     background: transparent;
-    -webkit-box-shadow: none;
     box-shadow: none
 }
 section#full-schedule .panel-default {
@@ -1964,10 +1902,7 @@ section#full-schedule .food-break {
     background: url(/media/image-backgrounds/black-and-white/food-break.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover
 }
 section#full-schedule .food-break p {
     text-transform: uppercase;
@@ -1980,10 +1915,7 @@ section#full-schedule .coffee-break {
     background: url(/media/image-backgrounds/coffee-break.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover
 }
 section#full-schedule .coffee-break p {
     text-transform: uppercase;
@@ -2005,9 +1937,7 @@ section#full-schedule .coffee-break p {
     font-size: 16px
 }
 .news-item * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all .3s ease;
     transition: all .3s ease
 }
 .news-item .image {
@@ -2080,7 +2010,6 @@ section#full-schedule .coffee-break p {
 }
 .news-item:hover img,
 .news-item .hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
 /*********
@@ -2097,9 +2026,7 @@ section#full-schedule .coffee-break p {
     margin: 50px 0
 }
 #latest-news .news-item * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all .3s ease;
     transition: all .3s ease
 }
 #latest-news .news-item .image {
@@ -2172,9 +2099,31 @@ section#full-schedule .coffee-break p {
 }
 #latest-news .news-item:hover img,
 #latest-news .news-item .hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1)
 }
+
+/*********
+Last Year
+*********/
+
+section#last-year {
+  color: #fff;
+  background: #141414 url(/media/image-backgrounds/last-year.jpg) no-repeat;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & a {
+    color: #fff;
+  }
+
+  @media(min-width: 1280px) {
+    & {
+      background-attachment: fixed
+    }
+  }
+}
+
 /*********
 20.Latest News Sidebar
 *********/
@@ -2189,10 +2138,7 @@ section#full-schedule .coffee-break p {
     background: #141414 url(/media/image-backgrounds/sidebar-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
     color: #FFF
 }
 #sidebar ul.social-buttons {
@@ -2209,8 +2155,6 @@ section#full-schedule .coffee-break p {
     outline: 0px none;
     color: #FFF;
     background-color: #141414;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
     transition: all .3s;
 }
 #sidebar ul.social-buttons li a:hover,
@@ -2435,24 +2379,12 @@ section#full-schedule .coffee-break p {
         display: block;
         top: 50px;
         color: #FFF;
-        -webkit-animation: arrow 1s both infinite;
         animation: arrow 1s both infinite;
     }
 }
 @media(max-width:768px) {
     .arrow i {
         display: none;
-    }
-}
-@-webkit-keyframes arrow {
-    0%, 20%, 50%, 80%, 100% {
-        -webkit-transform: translateY(0)
-    }
-    50% {
-        -webkit-transform: translateY(-20px)
-    }
-    60% {
-        -webkit-transform: translateY(-10px)
     }
 }
 @keyframes arrow {

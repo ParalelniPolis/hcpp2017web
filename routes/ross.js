@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET page. */
 
 var pageTitle = 'Postcard for Ross Ulbricht';
-var hashTitle = '#HCPP2016';
+var hashTitle = '#HCPP2017';
 var pageDescription = 'Show your respect to Ross Ulbricht, the most influential crypto-anarchist and the victim of the government’s inhumane persecution of free-minded people.';
 
 router.get('/', function(req, res) {
