@@ -1,5 +1,5 @@
-# HCPP 2016 website
-[![CircleCI](https://circleci.com/gh/ParalelniPolis/hcpp2016web.svg?style=svg)](https://circleci.com/gh/ParalelniPolis/hcpp2016web)
+# HCPP 2017 website
+[![CircleCI](https://circleci.com/gh/ParalelniPolis/hcpp2017web.svg?style=svg)](https://circleci.com/gh/ParalelniPolis/hcpp2017web)
 
 ### Requirements:
 
