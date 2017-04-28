@@ -199,6 +199,10 @@ p a {
 }
 .accent {
     color: var(--mainColor);
+
+    @media screen and (max-width: 479px) {
+      font-size: 16px;
+    }
 }
 /* ========== Backgrounds ========== */
 
@@ -1337,6 +1341,10 @@ section#newsletter {
 				background-attachment: fixed
 			}
 		}
+
+    & a {
+      color: #fff;
+    }
 }
 section#newsletter .form-group {
     margin-bottom: 0px;
