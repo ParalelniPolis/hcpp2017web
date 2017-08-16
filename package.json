@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "postinstall": "node ./speakers-backup.js && node ./schedule-backup.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
