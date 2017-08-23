@@ -12,6 +12,7 @@ var helpers = require('handlebars-helpers')();
 var mcapi = require('mailchimp-api/mailchimp');
 var helmet = require('helmet');
 var session = require('express-session');
+var moment = require('moment-timezone');
 recaptcha = require('express-recaptcha');
 
 // routes
@@ -49,6 +50,10 @@ app.use(helmet());
 mc = new mcapi.Mailchimp(process.env.MAILCHIMP_KEY || undefined);
 
 // view engine setup
+
+helpers.moment = function(date, format) {
+  return moment.tz(date, 'Europe/Prague').format(format);
+};
 
 app.engine('handlebars', exphbs({
   defaultLayout: 'main',

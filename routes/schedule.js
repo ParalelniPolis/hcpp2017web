@@ -1,4 +1,4 @@
-var moment = require('moment');
+var moment = require('moment-timezone');
 var _ = require('lodash');
 var fs = require('fs');
 var express = require('express');
