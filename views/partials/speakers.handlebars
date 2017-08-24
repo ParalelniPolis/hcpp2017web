@@ -26,7 +26,7 @@
               {{/withFirst}}
               {{#isEmpty talks}}
                 <figcaption>
-                  <p class="text-uppercase accent">Coming soon</p>
+                  <p class="text-uppercase accent">{{#if longDescription}}More info{{else}}Coming soon{{/if}}</p>
                 </figcaption>
               {{/isEmpty}}
             </figure>
@@ -62,7 +62,7 @@
                   {{#forEach talks}}
                     <h4>{{name}}</h4>
                     <div class="mrgn-10-btm">
-                      <span class="label label-main">{{moment starts "dddd HH:mm"}} - {{room.name}}</span>
+                      <span class="label label-main">{{#if starts}}{{moment starts "dddd HH:mm"}} - {{/if}}{{room.name}}</span>
                     </div>
                     <p>
                       {{description}}
