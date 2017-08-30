@@ -7,7 +7,16 @@ router.post('/', multer.array(), function(req, res) {
     id: req.body.list_id,
     email: {
       email: req.body.email
-    }},
+    },
+    merge_vars: {
+        groupings: [{
+            name: 'Event',
+            groups: ['HCPP17']
+        }]
+    },
+    update_existing: true,
+    replace_interests: false
+    },
     function(data) {
       if (req.body.type === 'fetch') {
         res.json({
