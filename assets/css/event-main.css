@@ -69,11 +69,6 @@ header#fullwidth .decentralization {
     & img {
         max-width: 100%;
         height: auto;
-        filter: grayscale(100%);
-        transition: filter 0.4s;
-        &:hover {
-            filter: grayscale(0%);
-        }
     }
     @media (min-width: 768px) {
         display: flex;
