@@ -32,6 +32,7 @@ router.post('/', [multer.array(), recaptcha.middleware.verify], function(req, re
     to: destinationAddress, // list of receivers
     subject: 'Contact form HCPP17 - ' + req.body.subject, // Subject line
     text: 'Name: ' + req.body.name + '\n'
+      + 'Company: ' + req.body.company + '\n'
       + 'E-mail: ' + req.body.email + '\n'
       + 'Subject: ' + req.body.subject + '\n\n'
       + 'Message: ' + '\n'
