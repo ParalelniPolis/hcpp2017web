@@ -1574,9 +1574,9 @@ express-handlebars@^3.0.0:
     object.assign "^4.0.3"
     promise "^7.0.0"
 
-express-recaptcha@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/express-recaptcha/-/express-recaptcha-2.2.0.tgz#fb9aa4e14f5aa66fdda797a1be240b23784d30da"
+express-recaptcha@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/express-recaptcha/-/express-recaptcha-2.3.0.tgz#6cff9557bb6a13dbd6b48efd7ed0785563f1e0b1"
 
 express-session@^1.15.5:
   version "1.15.5"
