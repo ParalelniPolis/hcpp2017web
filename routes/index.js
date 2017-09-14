@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fetch = require('node-fetch');
+var moment = require('moment-timezone');
 
 /* GET home page. */
 
@@ -30,8 +31,10 @@ router.get('/', recaptcha.middleware.render, function (req, res) {
 
   var requestBody = {
     operationName:"speakersQuery",
-    query:"query speakersQuery { allSpeakers(filter: {status: ACTIVE}, orderBy: position_ASC) { id displayName shortDescription longDescription position photo{ url } talks(filter: {status: ACTIVE}){ name starts ends room{ name } } } }",
-    variables:{}
+    query:"query speakersQuery($time: DateTime) { allSpeakers(filter: {status: ACTIVE}, orderBy: position_ASC) { id displayName shortDescription longDescription position photo{ url } talks(filter: {status: ACTIVE}){ name description starts ends room{ name } } } allTalks(filter: {status: ACTIVE, starts_gt: $time}, orderBy: starts_ASC, first: 3){ name description starts ends room{ name } speakers{ displayName photo{ url } } } }",
+    variables:{
+      time: moment.tz('Europe/Prague').format()
+    }
   };
 
   fetch(process.env.GRAPHQL_ENDPOINT, {
@@ -40,11 +43,11 @@ router.get('/', recaptcha.middleware.render, function (req, res) {
     body: JSON.stringify(requestBody)
   }).then(function (data) {
     return data.json();
-  }).then(function(speakers) {
+  }).then(function(queryData) {
     var speakerRows = [];
 
-    while (speakers.data.allSpeakers.length) {
-      speakerRows.push(speakers.data.allSpeakers.splice(0, 4));
+    while (queryData.data.allSpeakers.length) {
+      speakerRows.push(queryData.data.allSpeakers.splice(0, 4));
     }
 
     res.render('index', {
@@ -57,7 +60,7 @@ router.get('/', recaptcha.middleware.render, function (req, res) {
       mailchimp_message: mailchimpMessage,
       contact_message: contactMessage,
       speakerRows: speakerRows,
-      // smallSchedule: smallSchedule,
+      smallSchedule: queryData.data.allTalks,
       captcha: req.recaptcha
     });
   }).catch(function(error) {
