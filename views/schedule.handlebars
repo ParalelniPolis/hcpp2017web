@@ -20,19 +20,22 @@
           <div class="col-lg-10 col-lg-offset-1">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-justified" role="tablist" id="toolkit">
-              <li> <a href="#day1" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 01</span><br>
-                <span class="small">[30 September]</span> </a> </li>
+              <li class="active"><a href="#day1" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 01</span><br>
+                <span class="small">[06 October]</span></a>
+              </li>
               <li><a href="#day2" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 02</span><br>
-                <span class="small">[01 October]</span> </a> </li>
-              <li class="active"> <a href="#day3" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 03</span><br>
-                <span class="small">[02 October]</span> </a> </li>
+                <span class="small">[07 October]</span></a>
+              </li>
+              <li><a href="#day3" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 03</span><br>
+                <span class="small">[08 October]</span></a>
+              </li>
             </ul>
             <!-- /.Nav tabs -->
 
             <!-- Tabs Panes Days -->
             <div class="tab-content">
               <!-- Tab - Day 01 -->
-              <div class="tab-pane fade" id="day1">
+              <div class="tab-pane fade active in" id="day1">
                 <div class="coffee-break white">
                   <div class="row">
                     <p>
@@ -46,16 +49,16 @@
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{format_start_time}}</p>
+                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
                     {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{image}}" alt="{{full_public_name}}" class="img-responsive center-block img-circle img-speaker">
-                        {{full_public_name}}
+                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
+                        {{displayName}}
                       </p>
                     {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{title}}</p>
-                    <p>{{abstract}}</p>
+                    <p class="text-big text-bold text-uppercase">{{name}}</p>
+                    <p>{{description}}</p>
                     <span class="label label-main">{{room.name}}</span></div>
                 </div>
                 <!-- /.Talk -->
@@ -79,16 +82,16 @@
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{format_start_time}}</p>
+                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
                     {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{image}}" alt="{{full_public_name}}" class="img-responsive center-block img-circle img-speaker">
-                        {{full_public_name}}
+                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
+                        {{displayName}}
                       </p>
                     {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{title}}</p>
-                    <p>{{abstract}}</p>
+                    <p class="text-big text-bold text-uppercase">{{name}}</p>
+                    <p>{{description}}</p>
                     <span class="label label-main">{{room.name}}</span></div>
                 </div>
                 <!-- /.Talk -->
@@ -98,7 +101,7 @@
               <!-- /.Tab - Day 02 -->
 
               <!-- Tab - Day 03 -->
-              <div class="tab-pane fade active in" id="day3">
+              <div class="tab-pane fade" id="day3">
                 <div class="coffee-break white">
                   <div class="row">
                     <p>
@@ -112,16 +115,16 @@
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{format_start_time}}</p>
+                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
                     {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{image}}" alt="{{full_public_name}}" class="img-responsive center-block img-circle img-speaker">
-                        {{full_public_name}}
+                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
+                        {{displayName}}
                       </p>
                     {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{title}}</p>
-                    <p>{{abstract}}</p>
+                    <p class="text-big text-bold text-uppercase">{{name}}</p>
+                    <p>{{description}}</p>
                     <span class="label label-main">{{room.name}}</span></div>
                 </div>
                 <!-- /.Talk -->
