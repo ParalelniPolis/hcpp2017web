@@ -55,6 +55,11 @@ helpers.moment = function(date, format) {
   return moment.tz(date, 'Europe/Prague').format(format);
 };
 
+helpers.breaklines = function(text) {
+  text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+  return text;
+};
+
 app.engine('handlebars', exphbs({
   defaultLayout: 'main',
   partialsDir: ['views/partials/'],
