@@ -13,7 +13,6 @@ var mcapi = require('mailchimp-api/mailchimp');
 var helmet = require('helmet');
 var session = require('express-session');
 var moment = require('moment-timezone');
-recaptcha = require('express-recaptcha');
 
 // routes
 var indexRoute = require('./routes/index');
@@ -31,14 +30,13 @@ app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env === 'development';
 app.locals.APP_NAME = 'Hackers Congress Paralelní Polis 2017';
 
+app.locals.CAPTCHA_HASHES = process.env.CAPTCHA_HASHES;
+
 var sessionSecret = process.env.SESSION_SECRET;
 
 if (typeof sessionSecret === 'undefined') {
   throw new Error('Session key is not set');
 }
-
-// init recaptcha
-recaptcha.init(process.env.CAPTCHA_SITE_KEY, process.env.CAPTCHA_SECRET_KEY);
 
 // compress all requests
 app.use(compression());

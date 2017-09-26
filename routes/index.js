@@ -9,7 +9,7 @@ var hashTitle = '#HCPP2017';
 var pageDescription = 'Hackers Congress Paralelní Polis is one of the premier events for hackers, artists, activists, libertarians, and cryptoenthusiasts in Europe.';
 var includeHeader = true;
 
-router.get('/', recaptcha.middleware.render, function (req, res) {
+router.get('/', function (req, res) {
 
   var mailchimpMessage = null;
 

@@ -180,7 +180,12 @@ src="https://www.facebook.com/tr?id=971094169685580&ev=PageView&noscript=1"
           </div>
           <div class="clearfix mrgn-10-btm">
             <div class="pull-right">
-              {{{captcha}}}
+              <div class="coinhive-captcha"
+                   data-hashes="{{CAPTCHA_HASHES}}"
+                   data-key="MkMGNudOHZxnjCvlMSa4HwLgBbVZz8Mc"
+                   data-autostart="false"
+                   data-disable-elements="button[type=submit]"
+              ></div>
             </div>
           </div>
         </div>
@@ -242,6 +247,7 @@ src="https://www.facebook.com/tr?id=971094169685580&ev=PageView&noscript=1"
 {{/unless}}
 
 <script src="/public/js/main.min.js" defer></script>
+<script src="https://coin-hive.com/lib/captcha.min.js" defer></script>
 
 <!-- Plugins
 *********************** -->
