@@ -10,7 +10,7 @@ var coinhiveCaptcha = function (req, res, next) {
   requestBody.append('hashes', captchaHashes);
   requestBody.append('secret', captchaSecret);
 
-  fetch('https://api.coin-hive.com/token/verify', {
+  fetch('https://api.coinhive.com/token/verify', {
     method: 'POST',
     body: requestBody
   }).then(function (response) {
