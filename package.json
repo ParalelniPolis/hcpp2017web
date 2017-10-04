@@ -27,7 +27,8 @@
     "multer": "^1.2.0",
     "node-fetch": "^1.7.3",
     "nodemailer": "^4.1.0",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "slugify": "^1.2.1"
   },
   "devDependencies": {
     "cssnano": "^3.7.3",

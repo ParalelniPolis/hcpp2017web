@@ -12,6 +12,13 @@ function parseJSON(response) {
   return response.json();
 }
 
+$('.speaker-item [data-toggle="modal"]').on('click', function(event) {
+  event.preventDefault();
+  if (this.getAttribute('data-target')) {
+    window.location.hash = this.getAttribute('data-target');
+  }
+});
+
 $('#newsletterForm').on('submit', function(event) {
   event.preventDefault();
 
@@ -95,6 +102,14 @@ $(window).on('load', function() {
       scrollTop: $(hash).offset().top
     }, 1000, function() {
       window.location.hash = hash;
+    });
+  }
+
+  if (window.location.hash.indexOf('speaker_') > -1) {
+    $('html, body').animate({
+      scrollTop: $(window.location.hash).offset().top
+    }, 1000, function() {
+      $(document).find('.speaker-item [data-toggle="modal"][data-target="' + window.location.hash + '"]').click();
     });
   }
 

@@ -17,7 +17,7 @@
       <div class="col-md-3 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0 text-center">
         <!-- Speaker -->
         <div class="speaker-item">
-          <a href="javascript:void(0)" data-toggle="modal" {{#if longDescription}}data-target="#speaker_{{id}}"{{/if}}>
+          <a href="javascript:void(0)" data-toggle="modal" {{#if longDescription}}data-target="#speaker_{{slugify displayName}}"{{/if}}>
             <figure class="speaker accent-bg"> <img src="/media/images/transparent.png" data-lazy="{{photo.url}}" width="300" height="300" alt="{{displayName}}" class="img-responsive center-block" />
               {{#withFirst talks}}
               <figcaption>
@@ -38,7 +38,7 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="speaker_{{id}}" tabindex="-1" role="dialog">
+      <div class="modal fade" id="speaker_{{slugify displayName}}" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">

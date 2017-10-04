@@ -13,6 +13,7 @@ var mcapi = require('mailchimp-api/mailchimp');
 var helmet = require('helmet');
 var session = require('express-session');
 var moment = require('moment-timezone');
+var slugify = require('slugify');
 
 // routes
 var indexRoute = require('./routes/index');
@@ -56,6 +57,14 @@ helpers.moment = function(date, format) {
 helpers.breaklines = function(text) {
   text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
   return text;
+};
+
+helpers.slugify = function(text) {
+  return slugify(text, {
+    replacement: '-',    // replace spaces with replacement
+    remove: /[$*_+~.()'"!\-:@]/g,        // regex to remove characters
+    lower: true          // result in lower case
+  });
 };
 
 app.engine('handlebars', exphbs({
