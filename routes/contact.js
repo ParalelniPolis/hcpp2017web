@@ -3,8 +3,6 @@ var router = express.Router();
 var multer  = require('multer')();
 var nodemailer = require('nodemailer');
 
-var captchaMiddleware = require('../utils/coinhive-captcha-middleware');
-
 var emailUser = process.env.EMAIL_USER;
 var emailPass = process.env.EMAIL_PASS;
 var destinationAddress = process.env.DESTINATION_ADDRESS;
@@ -12,18 +10,18 @@ var destinationAddress = process.env.DESTINATION_ADDRESS;
 // create reusable transporter object using the default SMTP transport
 var transporter = nodemailer.createTransport('smtps://'+ emailUser +'%40gmail.com:'+ emailPass +'@smtp.gmail.com');
 
-router.post('/', [multer.array(), captchaMiddleware], function(req, res) {
+router.post('/', [multer.array(), recaptcha.middleware.verify], function(req, res) {
 
-  if (req.captcha.error) {
+  if (req.recaptcha.error) {
     if (req.body.type === 'fetch') {
-      console.log(req.captcha.error);
+      console.log(req.recaptcha.error);
       return res.json({
-        contactFormMsg: 'There was an error sending mail. ' + req.captcha.error
+        contactFormMsg: 'There was an error sending mail. ' + req.recaptcha.error
       });
     }
     else {
-      console.log(req.captcha.error);
-      req.session.contactErrorMsg = req.captcha.error;
+      console.log(req.recaptcha.error);
+      req.session.contactErrorMsg = req.recaptcha.error;
       return res.redirect('/?contact=error');
     }
   }
