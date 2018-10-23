@@ -20,13 +20,13 @@
           <div class="col-lg-10 col-lg-offset-1">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-justified" role="tablist" id="toolkit">
-              <li><a href="#day1" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 01</span><br>
+              <li class="active"><a href="#day1" role="tab" data-toggle="tab" aria-expanded="true"><span class="text-bold text-big ">Day 01</span><br>
                 <span class="small">[06 October]</span></a>
               </li>
               <li><a href="#day2" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 02</span><br>
                 <span class="small">[07 October]</span></a>
               </li>
-              <li class="active"><a href="#day3" role="tab" data-toggle="tab"><span class="text-bold text-big ">Day 03</span><br>
+              <li class=""><a href="#day3" role="tab" data-toggle="tab" aria-expanded="false"><span class="text-bold text-big ">Day 03</span><br>
                 <span class="small">[08 October]</span></a>
               </li>
             </ul>
@@ -35,7 +35,7 @@
             <!-- Tabs Panes Days -->
             <div class="tab-content">
               <!-- Tab - Day 01 -->
-              <div class="tab-pane fade" id="day1">
+              <div class="tab-pane fade active in" id="day1">
                 <div class="coffee-break white">
                   <div class="row">
                     <p>
@@ -45,25 +45,273 @@
                   </div>
                 </div>
                 <hr class="border-light">
-                {{#forEach day1}}
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
-                    {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
-                        {{displayName}}
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0ooa000l30179ppykarp8.jpg" alt="Pavol Lupták" class="img-responsive center-block img-circle img-speaker">
+                        Pavol Lupták
                       </p>
-                    {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{name}}</p>
-                    <p>{{{breaklines description}}}</p>
-                    <span class="label label-main">{{room.name}}</span></div>
+                    <p class="text-big text-bold text-uppercase">Opening</p>
+                    <p></p>
+                    <span class="label label-main">Studio 1</span></div>
                 </div>
                 <!-- /.Talk -->
-                {{#unless isLast}}<hr class="border-light">{{/unless}}
-                {{/forEach}}
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0la7u00m40187iaw84ux6.jpg" alt="Paige Peterson" class="img-responsive center-block img-circle img-speaker">
+                        Paige Peterson
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Foundations of Internet Money</p>
+                    <p>Confidentiality in financial systems is a core property for maintaining fungibility and protecting fundamental human values. While financial privacy is a key tool in protecting against surveillance and censorship in oppressive situations, it is also a basic necessity for day to day business activity. The privacy features in Zcash set a foundation for Internet money that benefits all.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0q04o00n40187hvfrlekl.jpg" alt="Juraj Bednár" class="img-responsive center-block img-circle img-speaker">
+                        Juraj Bednár
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Positive libertarianism</p>
+                    <p>Most libertarians will go through several phases. Seeing the inefficiency or injustice of the state is one of them. I want to suggest that there is another phase: Taking your liberty into your own hands. Hate taxes? Go to tax haven! Don't like public schools? Unschool your kids. Do you want banking privacy?  Cryptos! Don't like traditional models of relationships? Invent and build your own.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0miob00kn0179sprall57.jpg" alt="Ondřej Pilný" class="img-responsive center-block img-circle img-speaker">
+                        Ondřej Pilný
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">The Future of Crowd Funding</p>
+                    <p>In 2017 almost 2 Billion USD has been raised in Initial Coin Offerings (ICOs). Why do so many start-ups raise capital in ICOs and why people participate in ICOs? We will look at ICOs from both perspectives - ICO start-ups and investors. Differences between Venture Capital and ICOs. Opportunities and risks of participating in ICOs.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0q84p00lf0179z1a4v0ia.jpg" alt="Amin Rafiee" class="img-responsive center-block img-circle img-speaker">
+                        Amin Rafiee
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Giving people the tools to unchain themselves</p>
+                    <p>We have come to witness an upward trend in the field of cryptocurrencies. Many respectful professionals referred to it as a "Bubble" or a "hype" that as they claimed was ran by "a bunch of kids in their basements". Something that was started by the peer to peer community, open source, free to all, to compete with existing centralised organisations and governments. So how did this technology come to be? How is it that it can not only compete with, but come to push fortune 500 companies, government services as well as many highly praised job titles towards becoming obsolete? </p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0oviw00mw01877lgj5vsn.png" alt="Pamela Morgan" class="img-responsive center-block img-circle img-speaker">
+                        Pamela Morgan
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Cryptocurrencies Live Forever. You Won't.</p>
+                    <p>Think about the value of your bitcoin and other crypto-assets growing in the future. Now think about what will happen to those assets if something happens to you. Most people don't like to think about mortality but with these assets failure to plan usually means total loss. Attend this talk to learn why you need an inheritance plan and how to create one for your loved ones - without introducing a "trusted third party" to hold your keys.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Panel: ICOs</p>
+                    <p>Speakers:<br>PABLO COIROLO - Dynamic executive with 20 years of experience leading large-scale initiatives in various countries and industries.<br>• Broad general management skill set with proven entrepreneurial capability.<br>• Deep knowledge and experience in investment banking, strategic management consulting, M&amp;A's and strategic software design and development, including CRM, Big Data, systems integration, and Block-chain.<br><br>NICOLAI OSTER - Mr. Nicolai Oster joined Bitcoin Suisse AG in October 2015.<br>Nicolai has more than five years of experience in organization work where he led the organization of one of Denmark biggest youth parties as the Vice President. He played a crucial role in building up the organization, which is now one of Denmark’s best. Besides that, he played a quite central role in the mother party as well. In addition to his organization work, Nicolai has experience as a freelancer and IT-consultant for one of Denmark’s leading companies in selling used and new graphic machines, and as an office manager for the biggest and leading lobby firm in Scandinavia.<br><br>TONE VAYS - Tone is a former Bear Stearns Risk Analyst &amp; JP Morgan Chase VP. His expertise is in Economic Trends, Trading and Risk Analysis. Ever since getting involved in the Crypto Currency ecosystem in early 2013, he has been very active in spreading the relevance and importance of this technology as it helps promote economic freedom as the War on Cash rages on. Tone was recently featured in a Bitcoin Documentary – Magic Money. Tone is now an independent content creator at LibertyLifeTrail and the host of three YouTube podcasts: CryptoScam, On The Record, and Tone's Market Analysis. Tone holds a Masters Degree in Financial Engineering along with Bachelor Degrees in Mathematics and Geology.<br><br>ALENA VRÁNOVÁ</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0l1gq00kf01792r8sf39z.png" alt="Alexa Martinez" class="img-responsive center-block img-circle img-speaker">
+                        Alexa Martinez
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Exploring Consensual Non monogamy</p>
+                    <p>A look at the evolution of monogamy, how relationships have changed through time along with what is currently available on the fringe today.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj721rie800p70190j88ercuh.jpg" alt="Sva" class="img-responsive center-block img-circle img-speaker">
+                        Sva
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">p≡p ≡ pretty Easy privacy; Privacy by Default</p>
+                    <p>p≡p motivates a new standard to encrypt and verify written communication without reinventing the wheel: p≡p eases secure communications relying on well-established end-to-end cryptographic methods. p≡p's protocols automate the steps taught to users and follows standards like OpenPGPG or OTR to integrate into existing systems for written digital communications and automating key management tasks.</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0k0lb00m00187w0mdjmnl.png" alt="Tone Vays" class="img-responsive center-block img-circle img-speaker">
+                        Tone Vays
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Bitcoin's Price &amp; Adoption Trends in a Geopolitical World</p>
+                    <p>Over the last few years, we have seen the rise of the Blockchain concept and now ICO's but it was Bitcoin that started it all. In this talk, we will review the history of Bitcoin exploring reasons for all the price ups and down. Explore current important use case and look at the future impact of this technology. We conclude with some trading prediction using Technical Analysis of the price charts.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0m7c000mg0187lw4qhb8p.jpg" alt="David Hemmerle" class="img-responsive center-block img-circle img-speaker">
+                        David Hemmerle
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Fostering individual empowerment through social cohesion: A humanist view on freedom as a relational quality instead of a structural entity</p>
+                    <p>The liberal vision of freedom sees the individual to be able to choose from a variety of options without being restricted externally. An equal access to economic structures and the legal system realizes the liberal goal of equal chances for any member of society. The lack of an external boundary stopping the individual to act does not necessarily empower the individual to deal with existing things around him in a creative manner though. How does an approach to the concept of freedom as an individually acquired ability in a socially fostered environment relate to the modern version of liberty as a structural-political achievement?</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj78vao5d00e20165jcsyfe1v.jpg" alt="Tim Menapace" class="img-responsive center-block img-circle img-speaker">
+                        Tim Menapace
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">How to hack a blockchain</p>
+                    <p>No system is 100 % safe all the time. Same goes for blockchain. This talk will explain different blockchain frameworks and their respective characteristics. Based upon this attack vectors for these blockchain frameworks are explained. Live hacking included.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0p3kk00l70179nhqwqft6.png" alt="Smuggler" class="img-responsive center-block img-circle img-speaker">
+                        Smuggler
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">The Fog of Crypto War</p>
+                    <p>Technical aspects of crypto politics, and how crypto activists are engaging with a straw man, while the real thing happens in a different room. [ Undermining algorithms, key escrow, no more end to en encryption, breaking Internet security by outlawing crypto - and why it's about none of the above.]</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0ll2200kj017983lhgj92.jpg" alt="Josef Šíma" class="img-responsive center-block img-circle img-speaker">
+                        Josef Šíma
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Anarchy as a Conservative Program</p>
+                    <p>Many people consider anarchy to be a recipe for revolution and advocacy of chaotic social relations. Both claims are wrong. Not only we can easily see anarchy producing order, rather than chaos, but we can also show that the call for anarchy rests on very common-sense or even conservative requirements of social life.  </p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p10pta00nc018767v9hrrd.jpg" alt="Sam Patterson" class="img-responsive center-block img-circle img-speaker">
+                        Sam Patterson
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">OpenBazaar 2.0: Now is the Time to Shift to a Decentralized Marketplace</p>
+                    <p>Cryptocurrencies are decentralizing money, but online commerce is still highly centralized. OpenBazaar 2.0 has delivered on the promise of a decentralized marketplace that is easy to use. This talk explains why now is the time to shift our economic activity away from the tightly-controlled e-commerce websites and into this censorship-resistant, private, peer-to-peer marketplace.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0jsgl00k70179pteuda3t.png" alt="Amir Taaki" class="img-responsive center-block img-circle img-speaker">
+                        Amir Taaki
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Rojava: call for a revolutionary hacker movement and the study of polytechnics</p>
+                    <p>We are a revolutionary organization following the ideology of apoism in Rojava, North Syria. Global power is breaking up, and new groups are emerging in the struggle for power around the world. We are the technical arm of the democratic confederalist ideological movement. At one time hackers believed they could use the power of the internet and software to shape the world. Leaders emerged that managed to put forward exciting visions of the future that brought groups of technically skilled people together to build large scale projects. But there was another strand in the movement which rejected collective action driven by shared ideas, and instead saw technology merely a way to improve the material conditions of individuals and rejected changing the world. Our group is here to restore back the potential of the hacker movement. We are advancing a vision and practice for technologists that will make the hacker movement a revolutionary force with the power to shape global politics.<br></p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.00 PM</p>
+                      <p><img src="/media/speakers/cj6p17p9d00no0187ostduz0b.jpg" alt="Zdeňka Staňková" class="img-responsive center-block img-circle img-speaker">
+                        Zdeňka Staňková
+                      </p>
+                      <p><img src="/media/speakers/cj6p17gth00nk01876na0h8ic.jpg" alt="Urza" class="img-responsive center-block img-circle img-speaker">
+                        Urza
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Liberate education from the state</p>
+                    <p>Compulsory school attendance is not only immoral, but it also represents the initial reason of our economical lack of freedom; State education costs money, also it's a source of the state propaganda and statist indoctrination. This is the main cause of the conviction of people that free market fails in so many areas, so we need the state authority to replace it. Why don't they teach us anything about the impossibility of economic calculation in the central planning? How easily can the authority of a teacher be replaced by the state authorities? And how can we keep the freedom when we spend the most important years of our lives in the jail?</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">20.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Party</p>
+                    <p></p>
+                    <span class="label label-main">Bar La Fabrika</span></div>
+                </div>
+                <!-- /.Talk -->
+                
               </div>
               <!-- /.Tab - Day 01 -->
 
@@ -78,30 +326,323 @@
                   </div>
                 </div>
                 <hr class="border-light">
-                {{#forEach day2}}
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
-                    {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
-                        {{displayName}}
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0ncge00kz01794qav7ruz.jpg" alt="Matej Held" class="img-responsive center-block img-circle img-speaker">
+                        Matej Held
                       </p>
-                    {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{name}}</p>
-                    <p>{{{breaklines description}}}</p>
-                    <span class="label label-main">{{room.name}}</span></div>
+                    <p class="text-big text-bold text-uppercase">Innovations in  education</p>
+                    <p>The world is changing rapidly and education needs to adapt. But this is not always the case. In Hemisféra, we managed to innovate the education of children independently as a business without any external founding (Punk style). Business grows and we apply innovative methods such as gamification, freedom to learn, project education, edularping, new technology, NVC, and mindfulness.</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
                 </div>
                 <!-- /.Talk -->
-                {{#unless isLast}}<hr class="border-light">{{/unless}}
-                {{/forEach}}
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0ktpz00kb017922vyvchh.png" alt="Julien Guitton" class="img-responsive center-block img-circle img-speaker">
+                        Julien Guitton
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Lightning network basics and layer 3</p>
+                    <p>Lightning-fast blockchain payments without worrying about block confirmation times. Security enforced by blockchain smart-contracts without creating an on-blockchain transaction for individual payments. Payment speed measured in milliseconds to seconds. Capable of millions to billions of transactions per second across the network. Capacity blowing away legacy payment rails by many orders of magnitude. Attaching payment per action/click possible without custodians. The emergence of use cases such as instant micropayments. Cross-chain atomic swaps occurring off-chain instantly with heterogeneous blockchain consensus rules. Julien, with the help of Alice, Bob and their friends, will present you the lightning network. How it works, why it's mind-blowing and some uses cases the will disrupt the blockchain technology itself.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0ooa000l30179ppykarp8.jpg" alt="Pavol Lupták" class="img-responsive center-block img-circle img-speaker">
+                        Pavol Lupták
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Anonymous insurance and predictions markets</p>
+                    <p>Every new government's regulation, restriction or embargo that makes impossible for people to trade, do business or increase their expenses, creates a demand for any market solution that helps to bypass these obstacles. The fact - how many entrepreneurs or ordinary citizens consider the given law to be unethical, willing to avoid with the least risk as possible, determines an economic feasibility of the 'avoidance' solution.<br>Truly anonymous cryptocurrencies (like Monero/zCash/zCoin) and anonymous web applications (using Tor hidden service) make this problem technically solvable. The solution is an anonymous insurance company.<br>For the first time in the history, it is feasible to achieve an anonymous economic incentive leading to fully anonymous corruption &amp; bribes with the impossibility to identify those who corrupt as well as those who accept bribes.<br>The perfect corruption allows democratization of corporatism – everyone can create an anonymous economic incentive and be both bribe provider and receiver.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj78vac6700vt01259h4q0odk.jpg" alt="Justin Smith" class="img-responsive center-block img-circle img-speaker">
+                        Justin Smith
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">The future of Swiss private banking: Monero</p>
+                    <p>Switzerland’s banking sector is legendary for respecting its clients’ privacy. But that privacy is only available to very wealthy clients, and it vanishes at the first request of a foreign power. Cryptocurrency is the solution, and Bitcoin seems to be a safe bet. But while Bitcoin is useful in many ways, it’s Monero that will likely become the technology of choice for the future of private banking and wealth management. </p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj7gdgzo001ax0107x3y87r86.jpg" alt="Noud van Gemert &amp; Reynier Jonkers" class="img-responsive center-block img-circle img-speaker">
+                        Noud van Gemert &amp; Reynier Jonkers
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Criminal Law 101: On Cryptocurrencies and Encryption</p>
+                    <p>Under the flag of national security, governmental authorities are inclined to access all communications and follow every euro that is being spent. Encrypted communication and crypto currencies greatly enhance our privacy, but they’re legally challenged by investigative authorities. Noud and Reynier are criminal defense lawyers and defend this tech in the court room. They'll tell everything you need to know about criminal law, and how to prevent (unconsciously) laundering Bitcoins.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0nsh500mo0187tvkuw958.jpg" alt="Pavol Rusnák" class="img-responsive center-block img-circle img-speaker">
+                        Pavol Rusnák
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">(In)security of cryptospace</p>
+                    <p>We will look at (in)secure design of various elements of cryptospace such as cryptocurrencies and their protocols and provide a short overview what went wrong and could have gone wrong this year.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0m02j00mc0187f8uu868t.jpg" alt="Aleš Rod" class="img-responsive center-block img-circle img-speaker">
+                        Aleš Rod
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">FinTech vs. Traditional banking business models</p>
+                    <p>A traditional banking industry faces a new challenge – disruptive innovations driven by financial technologies. A new FinTech branch of economy benefits from similar factors like non-banking financial institutions in the mid of 20th century like lower regulation, flexibility or reputation bubble. Are traditional business models going to disappear? Is FinTech industry strong enough to oppose to banking lobby? And, last but not least, is there any space for cash as a medium of exchange in the FinTech world? These questions are pillars of Ales’s contribution.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0j4dw00ls0187svpjkbix.png" alt="Radim Kozub" class="img-responsive center-block img-circle img-speaker">
+                        Radim Kozub
+                      </p>
+                      <p><img src="/media/speakers/cj6p0jc8y00k301799z57rq9r.png" alt="Pavel Urbaczka" class="img-responsive center-block img-circle img-speaker">
+                        Pavel Urbaczka
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Crowdfunding as an expression of financial freedom</p>
+                    <p>We can live on bitcoins, avoid bank products and freely choose the other party of your transactions. But setting up a business with significant initial costs? Ask for the banking loan or find an angel investor. Buying shares in an interesting company? Ask some investment fund to include it in its portfolio, we are too "unqualified" to do it on our own. Until last year, this had been the common situation. With blockchain-based digital tokens, this will be over soon. And the tsunami of ICO´s is just a beginning. Crowd is becoming significant financial power. And everybody has a chance to become "qualified" enough to understand the investments into to the business entities. For the first time in history.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Panel: The Future of Money</p>
+                    <p>Technological advancements not only make cash vanish but also bring about new ways of recording transactions and storing value. A &#8203;member of &#8203;the&#8203; Czech National Bank&#8203; Board&#8203;, a cryptoanarchist, roboinvestment strategist and a money theorist will have their take on the future of money. How can digitalization of transactions and money better serve people and societies? How are they transforming the global financial system? Do alternative community currencies presage the end of fiat money? How can we arrive at frictionless economy? <br><br>&#8203;Speakers:&#8203;<br>Oldřich Dědek, member of the CNB Bank Board <br>Aleš Michl, &#8203;&#8203;owner, Quant Investment Fund<br>Jakub Jedlinský, assistant professor, University of Economics in Prague<br>Jan Hubík, Hackerspace, Parallel Polis<br><br>Chair: Maria Staszkiewicz, Czech Fintech Association</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0mq3n00kr0179sqww767v.jpg" alt="Chris Beams" class="img-responsive center-block img-circle img-speaker">
+                        Chris Beams
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">How to bootstrap a DAO</p>
+                    <p>We’ve heard a lot about decentralized autonomous organizations over the last several years, but thus far few have become fully operational. In this talk we’ll look at the practical considerations of designing and building a real-world DAO, using the Bisq exchange and its forthcoming DAO as a case study.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj7d7jadg00h00162t9nkyrjs.jpg" alt="Ido Kaiser" class="img-responsive center-block img-circle img-speaker">
+                        Ido Kaiser
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Particl: A Private and Decentralized Marketplace</p>
+                    <p>A technical presentation on how we plan to build a decentralized marketplace with a focus on privacy. Particl is a platform that features an anonymous cryptocurrency (CT, RingCT) and a BitMessage-style messaging system. We are in the process of designing a protocol (Open Market Protocol) for interactions between sellers and buyers.</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p08za100lo018721whpgeu.png" alt="Giacomo Zucco" class="img-responsive center-block img-circle img-speaker">
+                        Giacomo Zucco
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Bitcoin: political attack vectors and common misconceptions</p>
+                    <p>The blockchain technology was not brought about to improve past technologies, instead, its roots are exclusively political. The idea behind its development, started by the internet cypherpunks and then continued by Satoshi Nakamoto, is the creation of a monetary tool able to defy government censorship and to protect user’s privacy. In this speech, Giacomo Zucco will dispel myths about improbable uses of the blockchain, especially in the financial/banking world, and he will outline the true challenges behind Bitcoin. Part of those challenges are also political in nature: In the last months, we have seen interesting developments with the proposals of various contentious and not technically-motivated hard-forks, one of which was enacted (Bitcoin Cash). Those splits can be seen as a new kind of political attack vector against the decentralised and censorship-resistant nature of Bitcoin. To understand the absence of true technical motives behind those kind of consensus changes you have to understand the fundamental difference between the necessity of a dynamic, versatile and competitive system, following the Schumpeter’s definition of “Creative destruction”, able to disrupt and replace the current financial and monetary system, and the absolute importance of a resilient immutable base protocol. Protocols like the TCP/IP are very difficult to upgrade because they are base level network architectures, Bitcoin more-so needs to be static to withstand every kind of attack: strong foundations to build on. On the other hand, some changes are still deemed to be necessary and desirable before the eventual crystallisation of the protocol: one example is Segwit that was finally activated at the end of August 2017.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0pqmt00lb017997dkd1g0.jpg" alt="Juraj Karpiš" class="img-responsive center-block img-circle img-speaker">
+                        Juraj Karpiš
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">We Gotta Take the Money Back!</p>
+                    <p>How to Beat Fiat in a Not so Free Competition – meditations on proposed restrictions on product of the current monopoly money producers followed by an evaluation of private alternatives like gold, social networks money or cryptocurrencies. Speculations about their viability as fiat money contenders.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj7a95kjp00gx01938zhiq57w.jpg" alt="Adam Back" class="img-responsive center-block img-circle img-speaker">
+                        Adam Back
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Privacy, fungibility &amp; scale in Bitcoin</p>
+                    <p>Join this session to hear why the current and upcoming features in Bitcoin enable more financial and economic freedom than ever before.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj7q62z3r05km01574q8lfims.jpg" alt="Eric Martindale" class="img-responsive center-block img-circle img-speaker">
+                        Eric Martindale
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Taking Back The Web: Information Markets and Sociotechnical Systems</p>
+                    <p>The World Wide Web that we know today has powered both positive and negative change for society. What does the next web look like?  We explore how it might operate without compromising the freedom, privacy, or security of its users, ensuring the alignment of fair economic incentives for its participants - the Internet users.</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p135fx00ng018730pptaqv.jpg" alt="Daniel Krawisz" class="img-responsive center-block img-circle img-speaker">
+                        Daniel Krawisz
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">How to Nap the Most</p>
+                    <p>Bitcoin is a terrifying place full of ridiculous emotions. It is intelligent to prioritize naps in your investment decisions. This talk is about how to make investment decisions in the Bitcoin world that will let you sleep a lot and not drive yourself insane.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0phxf00n001872hn13ncy.png" alt="Frank Braun" class="img-responsive center-block img-circle img-speaker">
+                        Frank Braun
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Dehumanizing Technology</p>
+                    <p>Investigating the dangers of technological biases, path dependencies, addictive systems, totalitarian technology, and the resulting dehumanizing technology. Discussion about the ethics of technology in the light of blockchains and smart contracts. A critique of technological constructivism and the tech echo chamber.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj7ri9j6e02ol0116f53fhqh7.jpg" alt="Alžběta Moreno" class="img-responsive center-block img-circle img-speaker">
+                        Alžběta Moreno
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Fashion STL</p>
+                    <p>A new beginning of fashion.stl which started as a 3D printed fashion show at HCPP 2015. Now Bet Moreno with Ivana Kanovska and Oldrich Vojta are finding more innovative ways how to put together fashion and technology. How FashTech can change our future of clothing. How to use 3D print and scanners to have customized clothes. How we incorporate sensors and chips so our clothes become interactive. Let´s communicate via our clothing!</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.00 PM</p>
+                      <p><img src="/media/speakers/cj6p032et00k60187p3y77bua.png" alt="Jim Bell" class="img-responsive center-block img-circle img-speaker">
+                        Jim Bell
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Now that North Korea, Venezuela, and Iran are making the headlines,  don't you wish you had begun using my idea, Assassination Politics, years ago?</p>
+                    <p>In 1995, I thought of an idea, which I wrote into an essay called "Assassination Politics", which I asserted (and genuinely believe and believed, then and now) would eliminate the need and even the possibility of war, armies, and oppressive governments. I put it out there for everyone to consider and debate.  Everyone had the ability to find the flaws if any were present. Yet, subsequent years went by, and the world continued to have war and trillions of dollars spent on militaries. Governments continued to oppress.  And the public did, essentially, nothing. We are all subject to that abuse, today. There is an old joke about a religious man who is caught in his house in a flood. As the water rises higher, he is visited by two rescue boats. Each time they offer to rescue him; he responds by saying, "Go away. The Lord will save me!"  Eventually, the water continued to rise, he's on the chimney, water all around, and a rescue helicopter appears, offering assistance. He says, "Go away. The Lord will save me!". The helicopter leaves. The water rose, higher, the man drowns. In Heaven, he asks St. Peter, "Why did God not rescue me"? St. Peter answered, "He sent two boats and a helicopter; what more did you want?" Well, I, Jim Bell, sent the world my Assassination Politics essay. What more do YOU want?!?</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.00 PM</p>
+                      <p><img src="/media/speakers/cj7ribbco031601106z3cfe8d.jpg" alt="James Tooley (via Skype)" class="img-responsive center-block img-circle img-speaker">
+                        James Tooley (via Skype)
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">First steps to educational emancipation</p>
+                    <p>First steps to educational emancipation: an extraordinary revolution is occurring in the developing world. Low-cost private schools are replacing government provision, bringing the first steps towards educational freedom. But governments still regulate the framework of education – curriculum, assessment, etc. The next phase of liberation must address this too.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">20.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Party</p>
+                    <p></p>
+                    <span class="label label-main">Bar La Fabrika</span></div>
+                </div>
+                <!-- /.Talk -->
+                
               </div>
               <!-- /.Tab - Day 02 -->
 
               <!-- Tab - Day 03 -->
-              <div class="tab-pane fade active in" id="day3">
+              <div class="tab-pane fade" id="day3">
                 <div class="coffee-break white">
                   <div class="row">
                     <p>
@@ -111,25 +652,267 @@
                   </div>
                 </div>
                 <hr class="border-light">
-                {{#forEach day3}}
                 <!-- Talk -->
                 <div class="row">
                   <div class="col-xs-4 col-sm-2 text-center">
-                    <p class="text-big text-bold">{{moment starts 'HH.mm A'}}</p>
-                    {{#each speakers}}
-                      <p><img src="/media/images/transparent.png" data-lazy="{{photo.url}}" alt="{{displayName}}" class="img-responsive center-block img-circle img-speaker">
-                        {{displayName}}
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0q04o00n40187hvfrlekl.jpg" alt="Juraj Bednár" class="img-responsive center-block img-circle img-speaker">
+                        Juraj Bednár
                       </p>
-                    {{/each}}
                   </div>
                   <div class="col-xs-8 col-sm-10">
-                    <p class="text-big text-bold text-uppercase">{{name}}</p>
-                    <p>{{{breaklines description}}}</p>
-                    <span class="label label-main">{{room.name}}</span></div>
+                    <p class="text-big text-bold text-uppercase">Storing value in cryptos without fortune telling</p>
+                    <p>A lot of people in crypto space are real-world gamblers. They play a sophisticated version of roulette on crypto-exchanges. This is not the only way how to store value in cryptocurrencies. You can use strategies that have reasonable premises. They are easy enough to implement without fortune telling. And they have been used and tested here in Paralelní Polis.</p>
+                    <span class="label label-main">Studio 1</span></div>
                 </div>
                 <!-- /.Talk -->
-                {{#unless isLast}}<hr class="border-light">{{/unless}}
-                {{/forEach}}
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">13.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0n4tk00mk0187hlt3bhek.jpg" alt="Martin Habovštiak" class="img-responsive center-block img-circle img-speaker">
+                        Martin Habovštiak
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Comparing trade-offs of cryptocurrencies</p>
+                    <p>When Bitcoin was created, it was widely believed to be anonymous currency. This was proven to be inaccurate in practice and that incentivized people to search for other solutions. This talk will compare Bitcoin, Monero and Zcash to provide information about not just their anonymity but also other properties. The talk is meant even for non-technical people, so yes, you will understand it!</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">13.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Lightning talks</p>
+                    <p>Pavel Travnik: New concept of decentralized reputation system<br>1. How the state benefits from one-way transparency system<br>Today's legal system is dependent on the anonymity of state officers, while business owners have to act publicly and transparent. This one-way transparency can bring a dominance of the current state organization over the market. The non-equal position of two parties allows sanctions and other forms of punishments based on legal but not a moral basis.<br>2. How to transfer data from real world and create metadata in virtual world<br>I propose a system, where everybody needs to have a reputation to create a contract which binds parties and verification of the truth is based on participants of the system and also on their reputation.<br>The actual problem is the interpretation between official authority (which can be even private) and the network. This system provides secure transformation of information from the real world to machine readable format based on human effort.<br>3. Liability and network effect of interpersonal liability (Whitelist)<br>I propose also a system "Whitelist", where reputation is interconnected between pseudo-identities. Person use fraction of its property to ensure. It is possible, by networking effect, to create liability system based on shared interconnected liability based on real connections and trust. It involves "skin in the game" and discrimination of statist.<br><br>Harry Halpin<br><br>Felix Weis<br><br>+ one secret talk</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj7z0flap00so0123d9uzj2jt.jpg" alt="Jiří Šatánek" class="img-responsive center-block img-circle img-speaker">
+                        Jiří Šatánek
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Anonymous locking boxes for everybody</p>
+                    <p>Ethereum blockchain in locking systems. Locking system architecture. CryptoComb - open source modular system of anonymous boxes, design, construction, development, prototype demonstration. Possible applications for shared garages, hotel rooms, 3D printers, CNC machines or even drones...</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0oe1400ms0187cxafkevc.jpg" alt="Joerg Platzer" class="img-responsive center-block img-circle img-speaker">
+                        Joerg Platzer
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Freedom of transaction</p>
+                    <p>Why freedom of transaction in the information age is a basic precondition for all other basic and human rights. Historically it was always given and therefore never fought for in any revolution but now that we enter a fully digitized economy it can easily be taken away. Not to have freedom of transaction would end all other freedoms effective immediately though. Freedom of transaction must always include free choice of currency and of financial technology.<br><br>If there was ever a time to defend the achievements of past centuries and to carry them into the future and strengthen them that time is now.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">14.00 PM</p>
+                      <p><img src="/media/speakers/cj7q5yr4f05g60157axj5astf.jpg" alt="Julia Tourianski" class="img-responsive center-block img-circle img-speaker">
+                        Julia Tourianski
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">What Bitcoin taught me about people</p>
+                    <p>Bitcoin has had an uncanny impact in just a few years, not just on tech, economics &amp; politics, but on individuals. We all had our own ideas about how btc can affect lives. Many "bitcoiners" had a vision of how people will use bitcoin and why. And some, including myself, had a naive view about what kind of people would be drawn to this unique innovation. Expectations and preconceptions inevitably lead to disappointments...but hopefully ones we can all learn from. </p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0mybs00kv01790v138a4d.jpg" alt="Maksim Izmaylov" class="img-responsive center-block img-circle img-speaker">
+                        Maksim Izmaylov
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Welcome to the Recentralized World</p>
+                    <p>Despite the promise of the blockchain technology to decentralize the power that current institutions and moneyed individuals wield, what we see is just a redistribution of power with the "blockchain" prefix to it. I will talk about a few examples of recentralization and actions we can take to prevent it.</p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0q84p00lf0179z1a4v0ia.jpg" alt="Amin Rafiee" class="img-responsive center-block img-circle img-speaker">
+                        Amin Rafiee
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Bio-Hacking - Overcoming Programmed Ideologies</p>
+                    <p>Overcoming Programmed Ideologies: Re-learning through Removing Using meditation, breathing techniques and cold showers i trained myself to be fully submerged in a frozen lake for 7 minutes. I have gone 7 days without any food and dead-lift more than twice my body weight through strength training. I believe the human body is capable of many amazing things that we have forgotten. I hope to continue my last discussion and explore new possibilities that i have since explored.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">15.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0jkjn00lw0187wahiidaf.png" alt="Arto Bendiken" class="img-responsive center-block img-circle img-speaker">
+                        Arto Bendiken
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">A post-libertarian realpolitik</p>
+                    <p>We as libertarians often maintain that the state is a fiction, sometimes a consensual one. But what if the notion of rights is equally a fiction, too? We will examine a realpolitik perspective on how individual autonomy was curtailed historically and what a posited rising marginal cost of oppression means for the future of liberty.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0lt3100m801875mz154h0.jpg" alt="Paul Rosenberg" class="img-responsive center-block img-circle img-speaker">
+                        Paul Rosenberg
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">CRISPR &amp; Biohacking</p>
+                    <p>CRISPR is science fiction made real. It is nature's technology for splicing genes, and we've learned that it can be used for almost any application. On top of that, it's shockingly affordable. One expert on CRISPR calls it “the biggest thing since penicillin,” and that may not be an over-statement. CRISPR puts physical evolution into our hands.</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0qgdx00n801876z0jhmko.jpg" alt="Vít Jedlička" class="img-responsive center-block img-circle img-speaker">
+                        Vít Jedlička
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Liberland state model for 21st century</p>
+                    <p>Liberland is the youngest country on earth, and was formed on the 272nd birthday of Thomas Jefferson, 13th April 2015.  The country was formed on 7km2 of no mans' land, sitting between Croatia and Serbia.  It is the third smallest state after The Vatican and Monaco. Liberland's constitution is based on libertarian ideals and values; minimum government intervention with the maximum amount of freedom granted to its' citizens.<br>Liberland has attracted in excess of 450,000 applications for citizenship, and applies a concept of voluntary taxation. The state intends to be a leading role model in the 21st century, combining the best governance practices from constitutions of Switzerland and USA while implementing the latest state of the art technology such as blockchain, as well as proven concepts such as E-Residency demonstrated by Estonia.<br>The creation of a new country requires an extensive array of diplomatic, legal and technological challenges, which are essential for the proper development of a nation. Modern countries have in many cases become burdened with obstacles, rather than supporting the economic development of a society.  Over regulation and excessive taxation are smothering the economic growth, particularly in Europe.  Is the creation of a new smaller jurisdiction, with low taxation policies the correct answer to the stagnation of economic growth?  <br>Do existing countries have the courage to allow Liberland and other "free spirit" nations to flourish?  Or are we doomed to continue suffering due to the taxation policies of other countries?</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">16.00 PM</p>
+                      <p><img src="/media/speakers/cj7j44zsa000501784ov5nnel.jpg" alt="Peter Todd" class="img-responsive center-block img-circle img-speaker">
+                        Peter Todd
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">What does "blockchain" actually do?</p>
+                    <p>Ultimately all security software prevents things from happening. Here we'll dive into what exactly does "blockchain" tech prevent, and where that can and can't be useful.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Closing panel: Impact of cryptoanarchy and decentralization to our future</p>
+                    <p>Speakers:<br>Frank Braun<br>Jim Bell<br>Smuggler<br>Amir Taaki<br>Joerg Platzer<br><br>Chair: Pavol Lupták</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">17.00 PM</p>
+                      <p><img src="/media/speakers/cj8fp6kii00cu01751aikbxxd.png" alt="Tomáš Michálek" class="img-responsive center-block img-circle img-speaker">
+                        Tomáš Michálek
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">3D printing: Decentralization of manufacturing</p>
+                    <p>We are living at very exciting times. You can start manufacturing right on your desktop. The future of manufacturing is going to be local again thanks to 3D printing. Imagine consumer goods manufacturers publishing spare parts for download and letting anyone to print them on their 3D printers. Think of on-demand manufacturing and digital stock of items. </p>
+                    <span class="label label-main">Paper Hub</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6p0l1gq00kf01792r8sf39z.png" alt="Alexa Martinez" class="img-responsive center-block img-circle img-speaker">
+                        Alexa Martinez
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Full Spectrum Sexuality and Sexual Deviancy</p>
+                    <p>There are many ways to sex and be sexed. This is a talk about the wide variety of sexual preferences expressed across the globe. Healthy sexual expression leads to a sane mind. Let's find out what type of sexual deviant you are.</p>
+                    <span class="label label-main">Institute of Cryptoanarchy</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">18.00 PM</p>
+                      <p><img src="/media/speakers/cj6s1r3sn001n01445u1au4u2.jpg" alt="Jeffrey Tucker (via Skype)" class="img-responsive center-block img-circle img-speaker">
+                        Jeffrey Tucker (via Skype)
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Blockchain and the Technological Foundations of Civilization</p>
+                    <p>People think of blockchain as an edgy new technology. To some extent, this is true. But the real function of the technology is to solve a problem that dates deep into the history of the human experience. It is a new solution to the oldest problems.</p>
+                    <span class="label label-main">Slévárna</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.00 PM</p>
+                      <p><img src="/media/speakers/cj8ingf8h034z0137b21of842.jpg" alt="HCPP team" class="img-responsive center-block img-circle img-speaker">
+                        HCPP team
+                      </p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Closing</p>
+                    <p>Official wrap-up of #HCPP17</p>
+                    <span class="label label-main">Studio 1</span></div>
+                </div>
+                <!-- /.Talk -->
+                <hr class="border-light">
+                <!-- Talk -->
+                <div class="row">
+                  <div class="col-xs-4 col-sm-2 text-center">
+                    <p class="text-big text-bold">19.30 PM</p>
+                  </div>
+                  <div class="col-xs-8 col-sm-10">
+                    <p class="text-big text-bold text-uppercase">Party</p>
+                    <p></p>
+                    <span class="label label-main">Bar La Fabrika</span></div>
+                </div>
+                <!-- /.Talk -->
+                
               </div>
               <!-- /.Tab - Day 03 -->
 

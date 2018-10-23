@@ -5,3 +5,4 @@ node_modules/
 speakers_backup.json
 schedule_backup.json
 assets/backup-images/*.jpg
+images.js

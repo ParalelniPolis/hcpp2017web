@@ -23,7 +23,6 @@ var subscribeRoute = require('./routes/subscribe');
 var contactRoute = require('./routes/contact');
 var scheduleRoute = require('./routes/schedule');
 var rossRoute = require('./routes/ross');
-var tvRoute = require('./routes/tv');
 
 var app = express();
 
@@ -100,7 +99,6 @@ app.use('/subscribe', subscribeRoute);
 app.use('/contact', contactRoute);
 app.use('/schedule', scheduleRoute);
 app.use('/ross', rossRoute);
-app.use('/tv', tvRoute);
 
 // redirect old address
 app.get('/eng', function(req, res) {
