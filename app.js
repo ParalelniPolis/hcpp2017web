@@ -12,6 +12,7 @@ var helpers = require('handlebars-helpers')();
 var mcapi = require('mailchimp-api/mailchimp');
 var helmet = require('helmet');
 var session = require('express-session');
+var MemoryStore = require('memorystore')(session);
 var moment = require('moment-timezone');
 var slugify = require('slugify');
 recaptcha = require('express-recaptcha');
@@ -89,7 +90,11 @@ app.use(cookieParser(sessionSecret));
 app.use(session({
   secret: sessionSecret,
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  cookie: { maxAge: 86400000 },
+  store: new MemoryStore({
+    checkPeriod: 86400000 // prune expired entries every 24h
+  })
 }));
 app.use(express.static(path.join(__dirname, 'assets'), { maxAge: 31536000 }));
 
